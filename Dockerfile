@@ -10,8 +10,8 @@ COPY ./dist/crawl-links /crawl-links
 #
 # Environment variables for crawler
 #
-ENV TOPIC crawl_links
-ENV CHANNEL consumer
+ENV NSQ_TOPIC crawl_links
+ENV NSQ_CHANNEL consumer
 ENV NSQ_ADDR nsq:4150
 ENV NSQLOOKUP_ADDR nsqlookup:4161
 ENV CONCURRENCY 100
